@@ -143,6 +143,9 @@ export const sanitizeConfig = (config) => {
         forks: config?.github?.exclude?.forks || false,
         projects: config?.github?.exclude?.projects || [],
       },
+      include: {
+        repos: config?.github?.include?.repos || [],
+      }
     },
     social: {
       linkedin: config?.social?.linkedin,

@@ -81,11 +81,21 @@ const GitProfile = ({ config }) => {
           excludeRepo += `+-repo:${sanitizedConfig.github.username}/${project}`;
         });
 
-        let query = `user:${
-          sanitizedConfig.github.username
-        }+fork:${!sanitizedConfig.github.exclude.forks}${excludeRepo}`;
+        let query = ``;
+
+        if (sanitizedConfig.github.include.repos.length > 0) {
+          sanitizedConfig.github.include.repos.forEach((repo) => {
+            query += `+repo:${sanitizedConfig.github.username}/${repo}`;
+          });
+        } else {
+          query = `user:${sanitizedConfig.github.username}${excludeRepo}`;
+        }
+
+        query += `+fork:${!sanitizedConfig.github.exclude.forks}`;
 
         let url = `https://api.github.com/search/repositories?q=${query}&sort=${sanitizedConfig.github.sortBy}&per_page=${sanitizedConfig.github.limit}&type=Repositories`;
+
+        console.log(url);
 
         axios
           .get(url, {
@@ -96,6 +106,7 @@ const GitProfile = ({ config }) => {
           .then((response) => {
             let data = response.data;
 
+            console.log(data.items);
             setRepo(data.items);
           })
           .catch((error) => {
