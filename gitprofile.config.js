@@ -12,7 +12,7 @@ const config = {
     include: {
       repos: [
         'emergence',
-        'akka-persistence-mapdb',
+        'pekko-persistence-mapdb',
         'sbt-swagger-ui'
       ]
     }
@@ -31,7 +31,7 @@ const config = {
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://fgrutsch.com',
+    website: 'https://fgrutsch.github.io',
     phone: '',
     email: '',
   },
@@ -41,6 +41,7 @@ const config = {
   },
   skills: [
     'Kotlin',
+    'Kotlin Multiplatform',
     'Scala',
     'Java',
     'Micronaut',
@@ -56,6 +57,8 @@ const config = {
     'Docker',
     'Kubernetes',
     'AWS',
+    'Digital Ocean',
+    'Hetzner',
   ],
   experiences: [
     {
