@@ -10,12 +10,8 @@ const config = {
       projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
     include: {
-      repos: [
-        'emergence',
-        'akka-persistence-mapdb',
-        'sbt-swagger-ui'
-      ]
-    }
+      repos: ['emergence', 'pekko-persistence-mapdb', 'sbt-swagger-ui'],
+    },
   },
   social: {
     linkedin: 'fgrutsch',
@@ -31,16 +27,16 @@ const config = {
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://fgrutsch.com',
+    website: 'https://fgrutsch.github.io',
     phone: '',
     email: '',
   },
   resume: {
-    fileUrl:
-      '', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Kotlin',
+    'Kotlin Multiplatform',
     'Scala',
     'Java',
     'Micronaut',
@@ -56,6 +52,8 @@ const config = {
     'Docker',
     'Kubernetes',
     'AWS',
+    'Digital Ocean',
+    'Hetzner',
   ],
   experiences: [
     {
@@ -121,10 +119,7 @@ const config = {
     hideAvatarRing: false,
 
     // Available themes. To remove any theme, exclude from here.
-    themes: [
-      'light',
-      'dark',
-    ],
+    themes: ['light', 'dark'],
 
     // Custom theme
     customTheme: {

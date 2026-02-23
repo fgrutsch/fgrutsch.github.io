@@ -145,7 +145,7 @@ export const sanitizeConfig = (config) => {
       },
       include: {
         repos: config?.github?.include?.repos || [],
-      }
+      },
     },
     social: {
       linkedin: config?.social?.linkedin,
