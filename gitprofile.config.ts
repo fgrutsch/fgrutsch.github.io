@@ -26,6 +26,7 @@ const CONFIG = {
       manual: {
         // Properties for manually specifying projects
         projects: [
+          'fgrutsch/cookmaid',
           'fgrutsch/emergence',
           'fgrutsch/pekko-persistence-mapdb',
           'fgrutsch/sbt-swagger-ui',
@@ -115,7 +116,7 @@ const CONFIG = {
       position: 'Senior Backend Developer',
       from: 'August 2016',
       to: 'November 2022',
-      companyLink: 'https://firstbird.com',
+      companyLink: 'https://radancy.com',
     },
   ],
   certifications: [
